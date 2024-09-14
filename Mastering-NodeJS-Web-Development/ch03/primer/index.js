@@ -1,5 +1,7 @@
 "use strict";
-// Listing 3.21 Defining string variables in the index.ts file in the primer folder
+// Listing 3.22 Using a template string in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
-let firstSTring = "This is a string";
-let secondString = 'And so is this';
+let place;
+console.log(`Place value: ${place} Type: ${typeof (place)}`);
+// Output
+// Place value: undefined Type: undefined
