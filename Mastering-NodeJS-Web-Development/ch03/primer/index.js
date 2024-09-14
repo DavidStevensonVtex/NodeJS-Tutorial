@@ -1,8 +1,11 @@
 "use strict";
-// Listing 3.33 Using the optional chaining operator in the index.ts file in the primer folder
+// Listing 3.34 Defining a function in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
-let count = 100;
-let result1 = count?.toFixed(2);
-console.log(`Result 1: ${result1}`);
+function writeValue(val) {
+    console.log(`Value: ${val ?? "Fallback value"}`);
+}
+writeValue("London");
+writeValue(null);
 // Output
-// Result 1: 100.00
+// Value: London
+// Value: Fallback value
