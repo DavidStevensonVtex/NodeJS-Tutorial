@@ -1,11 +1,13 @@
 "use strict";
-// Listing 3.36 Defining a default parameter value in the index.ts file in the primer folder
+// Listing 3.37 Using a rest parameter in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
-function writeValue(val = "default value") {
-    console.log(`Value: ${val}`);
+function writeValue(val, ...extraInfo) {
+    console.log(`Value: ${val}, Extras: ${extraInfo}`);
 }
-writeValue("London");
-writeValue();
+writeValue("London", "Raining", "Cold");
+writeValue("Paris", "Sunny");
+writeValue("New York");
 // Output
-// Value: London
-// Value: default value
+// Value: London, Extras: Raining,Cold
+// Value: Paris, Extras: Sunny
+// Value: New York, Extras:  
