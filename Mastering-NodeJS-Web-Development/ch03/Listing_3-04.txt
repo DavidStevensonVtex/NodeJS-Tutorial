@@ -1,0 +1,5 @@
+# Listing 3.4 The contents of the tsconfig.json file in the primer folder
+
+{
+    "extends": "@tsconfig/node20/tsconfig.json"
+}
