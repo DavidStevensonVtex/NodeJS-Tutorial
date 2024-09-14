@@ -1,13 +1,14 @@
 "use strict";
-// Listing 3.37 Using a rest parameter in the index.ts file in the primer folder
+// Listing 3.38 Returning a result in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
-function writeValue(val, ...extraInfo) {
-    console.log(`Value: ${val}, Extras: ${extraInfo}`);
+function composeString(val) {
+    return `Composed string: ${val}`;
 }
-writeValue("London", "Raining", "Cold");
-writeValue("Paris", "Sunny");
-writeValue("New York");
+function writeValue(val) {
+    console.log(composeString(val ?? "Fallback value"));
+}
+writeValue("London");
+writeValue();
 // Output
-// Value: London, Extras: Raining,Cold
-// Value: Paris, Extras: Sunny
-// Value: New York, Extras:  
+// Composed string: London
+// Composed string: Fallback value
