@@ -1,0 +1,6 @@
+# Listing 3.3 Replacing the scripts section in the package.json file in the primer folder
+
+    "scripts": {
+        "use_js": "nodemon",
+        "use_ts": "tsc-watch --onSuccess \"node index.s\""
+    },
