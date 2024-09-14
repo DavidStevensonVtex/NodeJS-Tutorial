@@ -1,5 +1,5 @@
 "use strict";
-// Listing 3.18 Assigning null in the index.ts file in the primer folder
+// Listing 3.19 Using a type union in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
 let condition = true;
 let person = "Bob";
