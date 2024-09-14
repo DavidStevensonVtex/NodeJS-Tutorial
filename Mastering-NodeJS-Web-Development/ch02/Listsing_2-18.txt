@@ -1,0 +1,6 @@
+Listing 2.18 Configuring a command in the package.json file in the tools folder
+
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "tsc-watch message.ts --onSuccess \"node message.js\" "
+    },
