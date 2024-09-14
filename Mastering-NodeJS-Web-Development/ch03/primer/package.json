@@ -4,7 +4,7 @@
     "main": "index.js",
     "scripts": {
         "use_js": "nodemon",
-        "use_ts": "tsc-watch --onSuccess \"node index.s\""
+        "use_ts": "tsc-watch --onSuccess \"node index.js\""
     },
     "keywords": [],
     "author": "",
