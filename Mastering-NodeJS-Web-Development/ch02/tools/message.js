@@ -1,5 +1,5 @@
-// Listing 2.11 The contents of the message.ts file in the tools folder.
+// Listing 2.20 Making a change in the message.ts file in the tools folder.
 function writeMessage(msg) {
     console.log("Message: ".concat(msg));
 }
-writeMessage("This is the message");
+writeMessage("This is the new message");
