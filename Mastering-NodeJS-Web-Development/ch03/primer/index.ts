@@ -1,7 +1,7 @@
-// Listing 3.27 Using the identity operator in the index.ts file in the primer folder
+// Listing 3.28 Removing the type annotations in the index.ts file in the primer folder
 
-let firstVal: any = 5;
-let secondVal: any = "5";
+let firstVal = 5;
+let secondVal = "5";
 
 if (firstVal === secondVal) {
     console.log("They are the same");
@@ -9,5 +9,5 @@ if (firstVal === secondVal) {
     console.log("They are NOT the same");
 }
 
-// Output
-// They are NOT the same
+// Problems
+// index.ts(6,5): error TS2367: This comparison appears to be unintentional because the types 'number' and 'string' have no overlap.
