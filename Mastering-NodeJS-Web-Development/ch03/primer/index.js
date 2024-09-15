@@ -1,17 +1,16 @@
 "use strict";
-// Listing 3.49 Using the spread operator in the index.ts file in the primer folder
+// Listing 3.50 Creating an object in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
-let myArray = [100, "Adam", true];
-let otherArray = [...myArray, 200, "Bob", false];
-// for (let i = 0; i < myArray.length; i++) {
-//     console.log("Index " + i + ": " + myArray[i]);
-// }
-// console.log("---");
-otherArray.forEach((value, index) => console.log("Index " + index + ": " + value));
+let hat = {
+    name: "Hat",
+    price: 100
+};
+let boots = {
+    name: "Boots",
+    price: 100
+};
+console.log(`Name: ${hat.name}, Price: ${hat.price}`);
+console.log(`Name: ${boots.name}, Price: ${boots.price}`);
 // Output
-// Index 0: 100
-// Index 1: Adam
-// Index 2: true
-// Index 3: 200
-// Index 4: Bob
-// Index 5: false
+// Name: Hat, Price: 100
+// Name: Boots, Price: 100
