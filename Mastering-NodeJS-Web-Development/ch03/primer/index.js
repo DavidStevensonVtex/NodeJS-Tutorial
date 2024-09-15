@@ -1,5 +1,5 @@
 "use strict";
-// Listing 3.57 Using class inheritance in the index.ts file in the primer folder
+// Listing 3.58 Checking an object type in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
 class Product {
     name;
@@ -28,8 +28,14 @@ class DiscountProduct extends Product {
 }
 let hat = new DiscountProduct("Hat", 100, 10);
 let boots = new Product("Boots", 100, "Snow Gear");
-hat.printDetails();
-boots.printDetails();
+// hat.printDetails();
+// boots.printDetails();
+console.log(`Hat is a Product? ${hat instanceof Product}`);
+console.log(`Hat is a DiscountProduct? ${hat instanceof DiscountProduct}`);
+console.log(`Boots is a Product? ${boots instanceof Product}`);
+console.log(`Boots is a DiscountProduct? ${boots instanceof DiscountProduct}`);
 // Output
-// Name: Hat, Price: 90
-// Name: Boots, Price: 100, Category: Snow Gear
+// Hat is a Product? true
+// Hat is a DiscountProduct? true
+// Boots is a Product? true
+// Boots is a DiscountProduct? false
