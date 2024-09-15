@@ -1,14 +1,12 @@
 "use strict";
-// Listing 3.38 Returning a result in the index.ts file in the primer folder
+// Listing 3.39 Using functions as arguments to other functions in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
-function composeString(val) {
-    return `Composed string: ${val}`;
+function getUKCapital() {
+    return "London";
 }
-function writeValue(val) {
-    console.log(composeString(val ?? "Fallback value"));
+function writeCity(f) {
+    console.log(`City: ${f()}`);
 }
-writeValue("London");
-writeValue();
+writeCity(getUKCapital);
 // Output
-// Composed string: London
-// Composed string: Fallback value
+// City: London
