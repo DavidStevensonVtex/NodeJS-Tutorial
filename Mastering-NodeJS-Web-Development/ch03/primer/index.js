@@ -1,5 +1,5 @@
 "use strict";
-// Listing 3.42 Creating and populating an array in the index.ts file in the primer folder
+// Listing 3.43 Using a type annotation in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
 let myArray = [];
 myArray[0] = 100;
