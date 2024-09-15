@@ -1,5 +1,5 @@
 "use strict";
-// Listing 3.51 Describing an object type in the index.ts file in the primer folder
+// Listing 3.52 Adding a property in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
 let hat = {
     name: "Hat",
@@ -7,7 +7,8 @@ let hat = {
 };
 let boots = {
     name: "Boots",
-    price: 100
+    price: 100,
+    category: "Snow Gear"
 };
 function printDetails(product) {
     console.log(`Name: ${product.name}, Price: ${product.price}`);
