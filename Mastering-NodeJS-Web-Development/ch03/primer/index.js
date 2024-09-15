@@ -1,5 +1,5 @@
 "use strict";
-// Listing 3.56 Simplifying the class in the index.ts file in the primer folder
+// Listing 3.57 Using class inheritance in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
 class Product {
     name;
@@ -9,13 +9,7 @@ class Product {
         this.name = name;
         this.price = price;
         this.category = category;
-        // this.name = name;
-        // this.price = price;
-        // this.category = category;
     }
-    // name: string
-    // price: number
-    // category?: string
     printDetails() {
         if (this.category !== undefined) {
             console.log(`Name: ${this.name}, Price: ${this.price}, Category: ${this.category}`);
@@ -25,10 +19,17 @@ class Product {
         }
     }
 }
-let hat = new Product("Hat", 100);
+class DiscountProduct extends Product {
+    discount;
+    constructor(name, price, discount) {
+        super(name, price - discount);
+        this.discount = discount;
+    }
+}
+let hat = new DiscountProduct("Hat", 100, 10);
 let boots = new Product("Boots", 100, "Snow Gear");
 hat.printDetails();
 boots.printDetails();
 // Output
-// Name: Hat, Price: 100
+// Name: Hat, Price: 90
 // Name: Boots, Price: 100, Category: Snow Gear
