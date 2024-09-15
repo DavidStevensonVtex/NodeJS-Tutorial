@@ -1,15 +1,18 @@
 "use strict";
-// Listing 3.53 Defining an optional property in the index.ts file in the primer folder
+// Listing 3.54 Defining a class in the index.ts file in the primer folder
 Object.defineProperty(exports, "__esModule", { value: true });
-let hat = {
-    name: "Hat",
-    price: 100
-};
-let boots = {
-    name: "Boots",
-    price: 100,
-    category: "Snow Gear"
-};
+class Product {
+    constructor(name, price, category) {
+        this.name = name;
+        this.price = price;
+        this.category = category;
+    }
+    name;
+    price;
+    category;
+}
+let hat = new Product("Hat", 100);
+let boots = new Product("Boots", 100, "Snow Gear");
 function printDetails(product) {
     if (product.category !== undefined) {
         console.log(`Name: ${product.name}, Price: ${product.price}, Category: ${product.category}`);
