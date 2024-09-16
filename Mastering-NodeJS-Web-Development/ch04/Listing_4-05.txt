@@ -1,0 +1,5 @@
+Listing 4.5 Adding a Script command in the package.json file in the webapp folder
+
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/server.js\""
+  },
