@@ -1,0 +1,9 @@
+Listing 4.4 The contents of the tsconfig.json file in the webapp folder
+
+{
+    "extends": "@tsconfig/node20/tsconfig.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist"
+    }
+}
