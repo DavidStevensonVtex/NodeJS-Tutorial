@@ -4,7 +4,7 @@ import { IncomingMessage, ServerResponse } from "http";
 import { readFile } from "fs/promises";
 import { endPromise, writePromise } from "./promises" ;
 
-const total = 100_000_000 ;
+const total = 4_000_000_000 ;
 const iterations = 5 ;
 let shared_counter = 0;
 
