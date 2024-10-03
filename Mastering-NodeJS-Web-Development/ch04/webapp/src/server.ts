@@ -8,6 +8,7 @@ const port = 5000 ;
 const server = createServer() ;
 
 server.on("request", (req, res) => {
+    console.log("server.ts", "request made", req.url);
     if (req.url?.endsWith("favicon.ico")) {
         res.statusCode = 404 ;
         res.end();
